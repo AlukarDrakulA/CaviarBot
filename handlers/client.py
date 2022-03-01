@@ -5,7 +5,7 @@ from keyboards import mainManuKb, addClinentInfoKb, addPhoneKb, addLocationKb, c
 from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
-from database.sqllite import getClientInfo, addClient, addClientInfo
+from database.mongodb import getClientInfo, addClient, addClientInfo
 
 # ! Объявляем состояния
 class QuestionsClientInfo(StatesGroup):
